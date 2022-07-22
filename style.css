@@ -1,0 +1,990 @@
+@font-face {
+    font-family: Noto sans;
+    src: url(fonts/NotoSans-Light.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal;
+}
+@keyframes cookieUprise{
+    0%{
+        bottom: -10%;
+
+    }
+    100%{
+        bottom: 0%;
+
+    }
+}
+html {
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    cursor: default;
+}
+p{
+    color: #fff;
+    font-family: Noto sans;
+}
+H1{
+    color: #fff;
+
+}
+body {
+    background-color: #000000;;
+}
+/**/
+header {
+    width: 100%;
+    height: 100px;
+}
+header #top_bar{
+    width: 107px;
+    height: 109px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;   
+}
+header #Logo {
+    width: 107px;
+    height: 109px;
+    margin-left: 85px;
+    margin-top: 23px;
+    background: url(pictures/Cube\ new\ version-05\ 1.svg);
+}
+header #LogoName H1 {
+    color: #FFFFFF;
+    margin-top: 22px;
+    font-weight: 900;
+    font-family: Noto sans;
+    font-size: 30px;
+    pointer-events: none;
+}
+header #LoginItemHolder {
+    margin-left: 108px;
+    color: #fff;
+    margin-top: 23px;
+    width: 26px;
+    height: 24.99px;
+}
+header #LoginItemHolder #loginIcon{
+    background: url(pictures/Login-1.svg);
+    width: 26px;
+    height: 24.99px;
+}
+header #LoginItemHolder #loginIcon2 {
+    background: url(pictures/Login-2.svg);
+    width: 8.67px;
+    height: 8.33px;
+    position: relative;
+    left: 8.6px;
+    top: -32.36px;
+}
+header #LoginButton {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    margin-left: 14px;
+}
+header #LoginButton p {
+    color: #fff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 17px;   
+}
+header #LoginButton p:hover {
+    color: #3fe7ec;
+    border-bottom: 1px solid #3fe7ec;
+    cursor: pointer;
+
+}
+#page1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+#page1 div#introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    min-height: 500px; 
+    
+}
+#page1 div h1{
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+}
+#page1 #introductionPhone{
+    width: 25%;
+    min-height: 300px;
+    margin-left: 7%;  
+}
+#page1 #introduction p {
+    font-size: 20px;
+    font-family: Noto sans;
+}
+#page1 #introduction #introductionElipce{
+    width: 125px;
+    height: 125px;
+    background-color:rgba(96, 92, 234, 0.5);
+    position: relative;
+    top: 30px;
+    left: -112px;
+    border-radius: 50%;
+    filter: blur(50px);
+    
+}
+#page1 #introduction #border1 {
+    width: 139.44px;
+    height: 4px;
+    background-color: #fff;
+    position: relative;
+    left: -131px;
+    transform: rotate(120.61deg);
+}
+#page1 #introductionPhone .phone {
+    background-color: rgba(23, 28, 35, 1);
+    margin-left: 20%;
+}
+#page1 #introductionPhone .phone img{
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 7%;
+    border-radius: 7%;
+}
+#page1 #introductionPhone #phone1{
+    position: relative;
+    z-index: 5;
+    width: 332.88px;
+    height: 667.8px;
+    background: url(pictures/iPhone\ X\ image.png);
+    pointer-events: none;
+}
+#page1 #introductionPhone #Phone1Shadow{
+    z-index: 2;
+    position: relative;    
+    background: url(pictures/EllipsePhone1.svg);
+    width: 662.63px;
+    height: 783.03px;
+    filter: blur(0px);
+    transform: rotate(-105.26deg);
+    filter: blur(150px);
+    margin-top: -800px;
+    margin-left: -10px;
+}
+.downloadPart{
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.downloadPart div {
+    
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.downloadPart h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: nowrap;
+    padding-left: 150px;
+    min-width: 500px;
+}
+.downloadHolder{
+    width: 700px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.DownloadButton{
+    width: 163.53px;
+    height: 51.33px;
+    border: 1.28315px solid #fff; 
+    border-radius: 5px;   
+    background-size:100% 100%;
+}
+.DownloadButton:hover {
+    box-shadow: 0px 5px 10px 0px rgba(255, 254, 254, 0.5);
+    cursor: pointer;
+}
+#downloadApstore{
+    background-image: url(pictures/downloadAppStore.png);  
+}
+#downloadGPlay{
+    background-image: url(pictures/downLoadGooglePlay.png); 
+    
+}
+
+#cookieBar{
+    width: 100%;
+    height: 93px;
+    background-color: #212834;
+    position: fixed;
+    z-index: 7;
+    bottom: 0%;
+    animation-name: cookieUprise;
+    animation-duration: 1.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#cookieBar p {
+    color: #fff;
+    margin-left: 4%;
+    font-family: Noto sans;
+    font-size: 14px;
+}
+#cookieBar #cookieButton {
+    margin-right: 8%;
+    width: 132px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.5px #fff;
+    border-radius: 5px;
+}
+#cookieBar #cookieButton p{
+    margin-left: 0%;
+}
+#cookieBar #cookieButton:hover {
+    background-color: #39455a;   
+    cursor: pointer;
+}
+#page3 {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page3 .buttonPage3 {
+    width: 503px;
+    height: 312px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.371px;
+}
+#page3 .buttonPage3 a:hover{
+    color: #00C4CF;
+}
+
+#page3 .buttonPage3 H1 {
+    font-family: Noto sans;
+    margin-left: 55px;
+    margin-top: 64px;
+    width: 375px;
+    font-size: 30px;
+}
+#page3 .buttonPage3 p{
+    margin-left: 55px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+#page3 .buttonPage3 a{
+    position: relative;
+    color: #fff;
+    cursor: pointer;   
+}
+#page3 .buttonPage3 H2 {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 54.78px;
+    margin-top: 97px;
+}
+
+#page4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#page4 #phone2 {
+    position: relative;
+    z-index: 5;
+    width: 498px;
+    height: 999.06px;
+    background: url(pictures/iPhone\ X\ image.png);
+    background-size: 100%;
+    pointer-events: none;
+    transform: rotate(90deg);
+}
+#page4 #phone2 img {
+    width: 90%;
+    margin-left: 6%;
+    margin-top: 7%;
+    border-radius: 7%;
+}
+#page4 .shadow{
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.075);
+    position: relative;
+    margin-left: 0px ;
+    margin-top: -750px;
+    margin-left: -210px;
+    filter: blur(50px);  
+}
+#page4 #aboutСlients {
+    width: 800px;
+}
+#page4 #aboutСlients H1 {
+    position: relative;
+    z-index: 5;
+    font-size: 51px;
+    font-family: 'Montserrat', sans-serif;
+    width: 360px;
+}
+#page4 #aboutСlients p {
+    font-family: Noto sans;
+    width: 315px;
+    font-size: 18px;
+    margin-top: 23px;
+    position: relative;
+    z-index: 5;
+}
+#page4 #aboutСlients .shadow {
+    width: 85px;
+    height: 85px;
+    background-color: rgba(241, 1, 191, 1);
+    margin-top: -280px;
+    margin-left: 190px;
+}
+#imgpage{
+    width: 100%;  
+    min-height: 1000px;
+    margin-top: 283px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url("pictures/louis-hansel-shotsoflouis-_6ZqQc02NYc-unsplash.png") no-repeat;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+}
+#page5 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: -400px;
+    flex-wrap: wrap;
+}
+#page5 .phone {
+    background: url(pictures/iPhone\ X\ image.png);
+    position: relative;
+    z-index: 5;
+    width: 332px;
+    height: 667px;
+    background-size: 100%;
+    pointer-events: none;
+}
+#page5 #phone3 img{
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-radius: 7%;
+}
+#page5 #phone4 img{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 5%;
+    border-radius: 7%;
+}
+#page5 #verificationHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    flex-wrap: wrap;
+}
+#page5 H1 {
+    font-size: 51px;
+    font-family: 'Montserrat', sans-serif;
+}
+#page5 p {
+    max-width: 316px;
+    font-family: Noto Sans;
+    font-size: 18px
+}
+
+#page6 {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+    width: 100%;
+    min-height: 700px;
+    flex-wrap: wrap;
+}
+#page6 #BiToolInt H1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 51px;
+    width: 497px;
+}
+#page6 #BiToolInt p{
+    width: 395px;
+    font-size: 18px;
+    margin-top: 23px;
+}
+#page6 #BiToolInt .shadow{
+    width: 426.21px;
+    height: 438.35px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.1;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+    position: relative;
+    margin-top: -350px;
+    margin-left: -211px;
+}
+
+#page6 #charts {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#page6 #charts .Chart{
+    position: relative;
+    border: 0.62px solid #fff;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#page6 #charts #chart1 {
+    width: 193.85px;       
+    height: 117.61px;
+    z-index: 2;
+    background-color: #000000;
+}
+#page6 #charts #chart1 svg{
+    background: url(pictures/Chart1.svg) no-repeat;
+    width: 146.55px;       
+    height: 64.67px;
+}
+#page6 #pieHolder {
+    width: 211px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-top: -210px;
+    margin-left: -200px;
+}
+#page6 #pieHolder .pie {
+    width: 45.35px;
+    height: 45.35px;
+    border-radius: 50%;
+}
+#page6 #pieHolder #pie1 {
+    transform: rotate(45deg);   
+    background-image: conic-gradient(#00C4CF 87.5%, #406EB2 12.5%, #406EB2);
+
+}
+#page6 #pieHolder #pie2 {
+    transform: rotate(90deg);   
+    background-image: conic-gradient(#00C4CF 75%, #406EB2 25%, #406EB2);
+}
+#page6 #pieHolder #pie3 {
+    transform: rotate(0deg);   
+    background-image: conic-gradient(#406EB2 62.5%, #00C4CF 37.5%, #00C4CF);
+}
+#page6 #pieHolder #pie4 {
+    transform: rotate(180deg);   
+    background-image: conic-gradient(#00C4CF 50%, #406EB2 50%, #406EB2);
+}
+#page6 #charts #chart2 {
+    width: 193.85px;
+    height: 117.61px;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: -96px;
+
+}
+#page6 #charts #chart2 svg{
+    background: url(pictures/Chart2.svg) no-repeat;
+    width: 146.55px;       
+    height: 64.67px;
+}
+#page6 #charts #chart3 {
+    width: 182.49px;
+    height: 193.03px;
+    z-index: 1;
+    margin-top: -320px;
+    margin-left: 350px;
+
+}
+#page6 #charts #chart3 svg{
+    background: url(pictures/Chart3.svg) no-repeat;
+    width: 118.55px;       
+    height: 133.99px;
+}
+#page6 #charts #chart4 {
+    width: 252.24px;
+    height: 150.05px;
+    z-index: 1;
+    margin-top: -370px;
+    margin-left: 150px;
+
+}
+#page6 #charts #chart4 svg{
+    background: url(pictures/Chart4.svg) no-repeat;
+    width: 204.21px;       
+    height: 101.75px;
+}
+#page6 #charts #chart5 {
+    width: 192.22px;
+    height: 114.36px;
+    z-index: 1;
+    margin-top: 90px;
+    margin-left: -500px;
+
+}
+#page6 #charts #chart5 svg{
+    background: url(pictures/Chart5.svg) no-repeat;
+    width: 139.98px;       
+    height: 63.17px;
+}
+#page6 #charts #CircleChartHolder{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 500px;
+}
+#page6 #charts #CircleChartHolder .circleChart {
+    width: 56.21px;
+    height: 56.21px;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page6 #charts #CircleChartHolder .circleChart H1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6.31px;
+}
+#page6 #charts #CircleChartHolder .circleChart p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13.381px;
+}
+
+#page6 #charts #CircleChartHolder #circleChart1 {
+    background: url(pictures/circleChart1.svg);
+}
+#page6 #charts #CircleChartHolder #circleChart2 {
+    background: url(pictures/circleChart2.svg);
+}
+#page6 #charts #CircleChartHolder #circleChart3 {
+    background: url(pictures/circleChart3.svg);
+}
+#page6 #charts #CircleChartHolder #circleChart4 {
+    background: url(pictures/circleChart4.svg);
+}
+#page7 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 800px;
+}
+#page7 #pic1{
+    min-width: 55%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgb(255, 255, 255,0) 100%), url(pictures/marcela-laskoski-YrtFlrLo2DQ-unsplash.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    
+}
+#page7 #pic2{
+    min-width: 45%;
+    background:url(pictures/ash-edmonds-fsI-_MRsic0-unsplash.png) no-repeat;
+    background-size: 100%;
+    min-height: 800px;
+    background-repeat: no-repeat;  
+}
+#page7 #pic2 #nightlike {
+    width: 138.61px;
+    height: 54.24px;
+    background: url(pictures/Nightlife.png) no-repeat;
+    background-size: 73%;
+    margin-left: 80%;
+    margin-top: 5%;
+}
+
+#page8 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+}
+#page8 h1 {
+    font-size: 51px;
+    font-family: 'Montserrat', sans-serif;   
+}
+#page8 p {
+    max-width: 300px;
+    font-size: 18px;
+    margin-top: 23px;
+}
+#page8 #secondDownload {
+    width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    margin-top: 58px; 
+    margin-left: -30px;
+}
+#page8 #phone5 {
+    background: url(pictures/phone5.png) no-repeat;
+    background-size: 100%;
+    width: 332.56px;
+    height: 667.15px;
+    position: relative;
+    margin-top: -350px;
+}
+#page8 #phone6 {
+    background: url(pictures/phone6.png) no-repeat;
+    background-size: 100%;
+    width: 332.56px;
+    height: 667.15px;
+    position: relative;  
+}
+#page9 {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background: url(pictures/NOTAB.svg) no-repeat;
+    background-size: 100%;
+}
+#page9 picture {
+    position: absolute;
+    margin-top: -30em;
+}
+#page9 svg {
+    position: relative;
+    z-index: 2;
+    background-color: #000000;
+    background: url(pictures/phone7.svg);
+    width: 332.56px;
+    height: 667.15px;
+}
+#page9 div {
+    height: 80em;
+    width: 80em;
+    border-radius: 50%;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.15;
+    filter: blur(311.569px);  
+    position: relative;
+    margin-top: 0%;
+    margin-left: 0px;
+}
+#page9 svg#Arrow1{
+    background: url(pictures/Arrow\ 1.svg) no-repeat;
+    position: absolute;
+    margin-left: 25em;
+}
+#page9 H1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    position: relative;  
+    margin-left: -24em;
+    margin-top: -22em;  
+}
+
+#page10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+#page10 H1 {
+    margin-left: 7%;
+    width: 381px;
+    font-size: 51px;
+    font-family: 'Montserrat', sans-serif;
+}
+#page10 p {
+    margin-right: 7%;
+    width: 292px;
+    font-size: 18px;
+}
+#page11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1400px;
+}
+#page11 svg {
+    background: url(pictures/iPhone\ XS\ Longscroll\ Mockup\ 1.svg) no-repeat;
+    width: 868px;
+    height: 1038.21px;
+    position: relative;
+    z-index: 1;
+}
+:root {
+    --wid:300px;
+    --hei:200px;
+    --top:0px;
+    --left:0px;
+}
+#page11 .unit {
+    position: absolute;
+    width: var(--wid);
+    height: var(--hei);
+    margin-top: var(--top);
+    margin-left: var(--left);
+    border: 0.76px solid rgba(255, 255, 255, 0.5);
+    background: #000000;
+    border: 0.76007px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18.2417px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#page11 .unit p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22.8px;
+    width: 85%;
+}
+#page11 div.shadow {
+    position: absolute;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    width: 286.92px;
+    height: 267.17px;
+    margin-left: 90%;
+    margin-top: -30%;
+    transform: rotate(5.78deg);
+    opacity: 0.2;
+    filter: blur(200px);
+}
+#page12 {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #000000 6.8%, rgba(0, 0, 0, 0) 51.62%, #000000 97.38%), url(pictures/NOTABtext.png) repeat;
+    background-size: 40%;
+    background-position: -28.5% 0%;
+}
+#page12 #phone7 {
+    width: 428.16px;
+    height: 858.94px;
+    transform: rotate(-90deg);
+    background: url(pictures/iPhone\ X\ image.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+#page12 #phone7 div {
+    width: 675.46px;
+    height: 377.87px;
+    margin-top: 250px;
+    margin-left: -125px;
+    background: url(pictures/NotabScreenshot.png);
+    background-size: 100%;
+    transform: rotate(90deg);
+}
+#page13 {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page13 H1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    position: relative;
+}
+#page13 p {
+    font-family: Noto sans;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 82px;    
+    max-width: 580px;
+}
+#page13 #formHold{
+    width: 818px;
+}
+#page13 div input{
+    margin-top: 52px;
+}
+#page13 div div#CityHold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 845px;
+}
+#page13 div div #vCity{
+    width: 45%;
+}
+#page13 div div #sCity{
+    width: 45%;
+}
+#page13 input[type=text], select, textarea {
+    width: 100%;
+    height: 83px;
+    font-size: 18px;
+    padding-left: 23px;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px; 
+}
+#page13 textarea {
+    margin-top: 52px;
+    padding-top: 26px;
+    clear: both;
+    min-height:199px ;
+}
+#page13 input[type=submit] {
+    width: 398px;
+    height: 80px;
+    font-size: 24px;
+    margin-top: 85px;
+    background-color: #000000;
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}
+#page13 input[type=submit]:hover {
+    box-shadow: 0px 5px 10px 0px rgba(255, 254, 254, 0.5);
+    cursor: pointer;
+}
+#page13 .downloadPart {
+    width: 740px;
+    margin-top: 91px;
+}
+#page13 .downloadPart h1 {
+    font-size: 24px;
+}
+#page13 .downloadPart .DownloadButton {
+    width: 258.93px;
+    height: 81.27px;
+}
+#page13 .shadow {
+    position: absolute;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+}
+#page13 #shadow1{
+    width: 336.78px;
+    height: 341.42px;
+    margin-top: 470px;
+    margin-left: 1500px;
+}
+#page13 #shadow2 {
+    width: 247.04px;
+    height: 250.45px;
+    margin-top: -1500px;
+    margin-left: -400px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+    
+}
+footer #aboutUs {
+    position: relative;
+    margin-left: 258px;
+    width: 300px;
+    
+}
+footer #aboutUs svg {
+    width: 81.01px;
+    height: 16.15px;
+    background: url(pictures/NotabAbout.svg) no-repeat;
+    background-size: 100%;
+}
+footer #aboutUs p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 16px;    
+}
+footer #aboutUs a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+footer #aboutUs h1{
+    font-size: 18px;
+    margin-top: 19px;
+}
+footer #additionally {
+    position: relative;
+    margin-right: 200px;
+}
+footer #additionally p{
+    margin-top: 25px;
+}
+footer #additionally a{
+    width: 130px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer .shadow {
+    width: 405.99px;
+    height: 411.6px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    transform: rotate(5.78deg);
+    margin-top: -150px;
+    margin-left: -160px;
+    opacity: 0.3;
+    filter: blur(250px);
+    
+}
